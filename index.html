@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewerbungsprofil & Unterlagen | IT Service & Governance Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --lvm-green: #00802F;
+            --lvm-green-hover: #006023;
+            --lvm-green-light: #EBF7EE;
+            --bg-color: #F4F6F5;
+            --card-bg: #FFFFFF;
+            --text-main: #1F2937;
+            --text-muted: #6B7280;
+            --border-color: #E5E7EB;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px 16px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: var(--card-bg);
+            border-radius: 24px;
+            box-shadow: 0 12px 36px rgba(0, 128, 47, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+            padding: 36px 24px;
+            text-align: center;
+            border-top: 6px solid var(--lvm-green);
+        }
+
+        .avatar {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 18px;
+            background: var(--lvm-green-light);
+            color: var(--lvm-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            border: 2px solid var(--lvm-green);
+            box-shadow: 0 4px 12px rgba(0, 128, 47, 0.15);
+        }
+
+        h1 {
+            font-size: 21px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--text-main);
+            letter-spacing: -0.3px;
+        }
+
+        .subtitle {
+            font-size: 13.5px;
+            color: var(--text-muted);
+            margin-bottom: 28px;
+            line-height: 1.45;
+        }
+
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .btn-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 20px;
+            border-radius: 14px;
+            text-decoration: none;
+            color: var(--text-main);
+            background: #FFFFFF;
+            border: 1.5px solid var(--border-color);
+            transition: all 0.22s ease-in-out;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        .btn-card:hover {
+            border-color: var(--lvm-green);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 128, 47, 0.14);
+        }
+
+        .btn-primary-highlight {
+            border-color: var(--lvm-green);
+            background: #F8FDF9;
+        }
+
+        .btn-content {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-align: left;
+        }
+
+        .btn-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .icon-pdf {
+            background: #FEE2E2;
+            color: #DC2626;
+        }
+
+        .icon-linkedin {
+            background: #E0F2FE;
+            color: #0A66C2;
+        }
+
+        .icon-xing {
+            background: #E6F4EA;
+            color: #026466;
+        }
+
+        .btn-text h2 {
+            font-size: 14.5px;
+            font-weight: 600;
+            margin-bottom: 2px;
+            color: var(--text-main);
+        }
+
+        .btn-text p {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .arrow {
+            color: #9CA3AF;
+            font-size: 19px;
+            font-weight: 600;
+            transition: transform 0.2s, color 0.2s;
+            margin-left: 8px;
+        }
+
+        .btn-card:hover .arrow {
+            color: var(--lvm-green);
+            transform: translateX(4px);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 11.5px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border-color);
+            padding-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Avatar / Initialen oder Profilbild -->
+        <div class="avatar">FB</div>
+
+        <h1>Bewerberprofil & Unterlagen</h1>
+        <p class="subtitle">Wirtschaftsingenieur & IT-Projektmanager<br>Fokus: IT Service & Governance</p>
+        
+        <div class="links-list">
+            <!-- 1. Lebenslauf PDF -->
+            <a href="https://drive.google.com/file/d/1Lfl_v5BmV6MJoGKfF2mlIOWBFoo55Wdd/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn-card btn-primary-highlight">
+                <div class="btn-content">
+                    <div class="btn-icon icon-pdf">📄</div>
+                    <div class="btn-text">
+                        <h2>Lebenslauf als PDF</h2>
+                        <p>Aktuelle Version öffnen & herunterladen</p>
+                    </div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+
+            <!-- 2. LinkedIn -->
+            <a href="http://www.linkedin.com/in/felix-bormann/" target="_blank" rel="noopener noreferrer" class="btn-card">
+                <div class="btn-content">
+                    <div class="btn-icon icon-linkedin">in</div>
+                    <div class="btn-text">
+                        <h2>LinkedIn-Profil</h2>
+                        <p>Vernetzen & Werdegang einsehen</p>
+                    </div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+
+            <!-- 3. XING -->
+            <a href="https://www.xing.com/profile/Felix_Bormann12/web_profiles" target="_blank" rel="noopener noreferrer" class="btn-card">
+                <div class="btn-content">
+                    <div class="btn-icon icon-xing">X</div>
+                    <div class="btn-text">
+                        <h2>XING-Profil</h2>
+                        <p>Berufliches Netzwerk & Details</p>
+                    </div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+        </div>
+
+        <div class="footer">
+            Digitale Bewerbungsunterlagen • Vertraulich
+        </div>
+    </div>
+</body>
+</html>
